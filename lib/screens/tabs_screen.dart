@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'categories_screen.dart';
 import 'favorite_screen.dart';
+import '../components/main_drawer.dart';
 
 class TabsScreen extends StatefulWidget {
   const TabsScreen({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class _TabsScreenState extends State<TabsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    /*return Scaffold(
       appBar: AppBar(
         title: Text(_screens[_selectedScreenIndex]['title'] as String),
       ),
@@ -47,10 +48,11 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
         ],
       ),
-    );
-    /*return DefaultTabController(
+    );*/
+    return DefaultTabController(
       length: 2,
       child: Scaffold(
+        drawer: MainDrawer(),
         appBar: AppBar(
           title: const Text("Vamos cozinhar?"),
           bottom: const TabBar(
@@ -73,6 +75,6 @@ class _TabsScreenState extends State<TabsScreen> {
           ],
         ),
       ),
-    );*/
+    );
   }
 }
