@@ -55,7 +55,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       body: Column(
         children: [
           Container(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: Text(
               "Configurações",
               style: Theme.of(context).textTheme.copyWith().headline6,

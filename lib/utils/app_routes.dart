@@ -3,6 +3,7 @@ import 'package:meals/screens/categories_screen.dart';
 
 class AppRoutes {
   static const home = '/';
+  static const mainHome = '/categories';
   static const categoriesMeals = '/categories-meals';
   static const mealDetail = '/meal-detail';
   static const settings = '/settings';

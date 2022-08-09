@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/screens/home_page_screen.dart';
 
 import 'screens/categories_meals_screen.dart';
 import 'screens/tabs_screen.dart';
@@ -86,7 +87,8 @@ class _MyAppState extends State<MyApp> {
       ),
       //home: CategoriesScreen(),
       routes: {
-        AppRoutes.home: (ctx) => TabsScreen(favoriteMeals: _favoriteMeals),
+        AppRoutes.home: (ctx) => HomePageScreen(),
+        AppRoutes.mainHome: (ctx) => TabsScreen(favoriteMeals: _favoriteMeals),
         AppRoutes.categoriesMeals: (ctx) =>
             CategoriesMealsScreen(meals: _availableMeals),
         AppRoutes.mealDetail: (ctx) => MealDetailScreen(
